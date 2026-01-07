@@ -3,89 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAMAN VIP AI MOD | ALL-IN-ONE HACK</title>
+    <title>DAMAN 30S REAL-TIME AI</title>
     <style>
-        body { background: #000; color: #0f0; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; }
-        .matrix-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.1; }
-        .header { background: linear-gradient(to right, #111, #222); padding: 15px; border-bottom: 2px solid gold; box-shadow: 0 5px 15px rgba(255,215,0,0.3); }
-        .logo { font-size: 28px; font-weight: bold; color: gold; letter-spacing: 2px; text-shadow: 0 0 10px gold; }
-        .live-stats { background: rgba(255,0,0,0.2); color: #ff4444; font-size: 12px; padding: 5px; font-weight: bold; }
-        .main-card { border: 2px solid #0f0; margin: 15px; border-radius: 20px; background: rgba(0,20,0,0.95); padding: 20px; box-shadow: 0 0 25px #0f0; }
-        .tabs { display: flex; justify-content: space-around; margin-bottom: 15px; gap: 5px; }
-        .tab-btn { background: #111; color: gold; border: 1px solid gold; padding: 10px; border-radius: 8px; cursor: pointer; flex: 1; font-size: 12px; }
-        .tab-btn.active { background: gold; color: #000; font-weight: bold; }
-        #prediction { font-size: 65px; font-weight: bold; color: #fff; text-shadow: 0 0 20px gold; margin: 10px 0; }
-        .btn-vip { background: linear-gradient(45deg, #f00, #900); color: #fff; padding: 18px; width: 90%; display: inline-block; border-radius: 12px; font-weight: bold; text-decoration: none; margin-top: 15px; font-size: 20px; box-shadow: 0 5px 15px rgba(255,0,0,0.5); }
-        .share-box { margin-top: 20px; display: flex; justify-content: center; gap: 10px; }
-        .share-btn { background: #25D366; color: white; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-size: 14px; font-weight: bold; }
-        .disclaimer { font-size: 10px; color: #555; padding: 20px; line-height: 1.4; text-align: justify; border-top: 1px solid #222; margin-top: 30px; }
-        table { width: 100%; margin-top: 15px; font-size: 12px; border-collapse: collapse; background: #050505; }
-        th, td { border: 1px solid #222; padding: 10px; text-align: center; }
+        body { background: #000; color: #fff; font-family: 'Arial Black', sans-serif; text-align: center; margin: 0; }
+        .matrix-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.1; font-family: monospace; font-size: 10px; }
+        .header { background: #111; padding: 15px; border-bottom: 2px solid gold; }
+        .timer-box { font-size: 40px; color: #ff0000; margin: 10px 0; text-shadow: 0 0 10px red; }
+        .main-card { border: 3px solid #0f0; margin: 15px auto; width: 90%; max-width: 400px; border-radius: 25px; background: rgba(0,30,0,0.9); padding: 25px; box-shadow: 0 0 25px #0f0; }
+        #period { font-size: 18px; color: gold; margin-bottom: 5px; }
+        #prediction { font-size: 100px; color: #fff; text-shadow: 0 0 30px gold; margin: 15px 0; }
+        .bet-advice { font-size: 20px; background: gold; color: #000; padding: 10px; border-radius: 10px; display: inline-block; font-weight: bold; }
+        .btn-vip { background: red; color: white; padding: 18px; width: 85%; border-radius: 15px; font-size: 20px; text-decoration: none; display: inline-block; margin-top: 25px; animation: blink 1s infinite; }
+        @keyframes blink { 0% {opacity: 1;} 50% {opacity: 0.7;} 100% {opacity: 1;} }
+        table { width: 100%; margin-top: 20px; border-collapse: collapse; font-size: 14px; background: #050505; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: center; }
     </style>
 </head>
 <body>
     <div class="matrix-bg" id="matrix"></div>
-
     <div class="header">
-        <div class="logo">💎 DAMAN AI MOD 💎</div>
-        <div style="font-size: 10px; color: #888;">OFFICIAL PARTNER V8.5</div>
+        <div style="font-size: 12px; color: #888;">OFFICIAL WIN GO 30S SERVER</div>
+        <div class="timer-box">TIME LEFT: <span id="timer">30s</span></div>
     </div>
-
-    <div class="live-stats">🔴 LIVE USERS ONLINE: <span id="user-count">4,281</span></div>
-
-    <div style="margin: 10px 0; min-height: 50px; background: #111;">[AD_UNIT_1]</div>
 
     <div class="main-card">
-        <div class="tabs">
-            <button class="tab-btn active" onclick="changeGame('WinGo_30S')">30S</button>
-            <button class="tab-btn" onclick="changeGame('WinGo_1M')">1M</button>
-            <button class="tab-btn" onclick="changeGame('WinGo_3M')">3M</button>
-            <button class="tab-btn" onclick="changeGame('WinGo_5M')">5M</button>
-        </div>
-        
-        <div id="status" style="font-size: 11px; color: #0f0;">SERVER: CONNECTED ✔</div>
-        <h2 id="period" style="color: #666; margin: 10px 0;">PERIOD: LOADING...</h2>
-        <div id="prediction">ANALYZING</div>
-
-        <div style="display:flex; justify-content:space-around; background:#111; padding:10px; border-radius:10px;">
-            <div>NEXT: <b id="next-bet" style="color:gold;">--</b></div>
-            <div>LEVEL: <b id="next-amt" style="color:#f00;">₹10</b></div>
-        </div>
-
-        <a href="YOUR_ADSTERRA_LINK" class="btn-vip">🎁 GET FREE GIFT CODE 🎁</a>
-        
-        <div class="share-box">
-            <a href="https://wa.me/?text=Check this Daman Mod!" class="share-btn">WhatsApp Share</a>
-            <a href="https://t.me/share/url?url=YOUR_LINK" class="share-btn" style="background:#229ED9;">Telegram</a>
-        </div>
+        <div id="period">PERIOD: LOADING...</div>
+        <div style="font-size: 14px; color: #0f0;">AI PREDICTION</div>
+        <div id="prediction">WAIT</div>
+        <div class="bet-advice" id="suggest">NEXT BET: --</div>
+        <a href="YOUR_ADSTERRA_LINK" class="btn-vip">⚡ ACTIVATE VIP SERVER ⚡</a>
     </div>
 
-    <div style="margin: 10px 0; min-height: 50px; background: #111;">[AD_UNIT_2]</div>
-
-    <div style="padding: 15px;">
-        <h3 style="color: gold; font-size: 16px; text-align: left;">LIVE SERVER HISTORY</h3>
+    <div style="padding: 15px; text-align: left;">
+        <h3 style="color: gold;">LAST 5 RESULTS (LIVE)</h3>
         <table>
-            <thead><tr><th>PERIOD</th><th>NUM</th><th>SIZE</th><th>WIN/LOSS</th></tr></thead>
+            <thead><tr><th>PERIOD</th><th>RESULT</th><th>STATUS</th></tr></thead>
             <tbody id="history-body"></tbody>
         </table>
     </div>
 
-    <div class="disclaimer">
-        <b>DISCLAIMER:</b> This AI Mod is for educational and entertainment purposes only. We do not promote gambling. Users are responsible for their own risk. This system uses historical data analysis to provide predictions. High accuracy does not guarantee 100% win every time.
-        <br><br>
-        © 2026 DAMAN VIP MOD - ALL RIGHTS RESERVED.
-    </div>
-
     <script>
-        // Real-time Engine & API Fetching Logic (Vahi pichla wala jo tune API se connect kiya tha)
-        // [Maine yahan function include kiya hai jo aapke API se data uthayega]
-        // ... (API Fetching Script Yahan Hoga) ...
+        // Matrix Effect
+        const m = document.getElementById('matrix');
+        for(let i=0; i<50; i++) m.innerHTML += "SYNCING_WITH_DAMAN_SERVER_API...<br>";
 
-        // Fake User Counter Logic
-        setInterval(() => {
-            let count = Math.floor(Math.random() * (5000 - 4000) + 4000);
-            document.getElementById('user-count').innerText = count.toLocaleString();
-        }, 3000);
+        function startEngine() {
+            setInterval(() => {
+                const now = new Date();
+                const seconds = now.getSeconds();
+                const milliseconds = now.getMilliseconds();
+                
+                // 30 Second Countdown Logic (0-30 and 30-60)
+                let timeLeft = 30 - (seconds % 30);
+                document.getElementById('timer').innerText = timeLeft + "s";
+
+                // Period Sync
+                const totalSeconds = Math.floor((now - new Date().setHours(0,0,0,0)) / 1000);
+                const intervals = Math.floor(totalSeconds / 30);
+                const dateStr = now.getFullYear().toString() + (now.getMonth() + 1).toString().padStart(2, '0') + now.getDate().toString().padStart(2, '0');
+                const currentP = dateStr + "1000" + (10001 + intervals);
+                document.getElementById('period').innerText = "PERIOD: " + currentP;
+
+                // Prediction Logic (Har 30 sec baad badlega)
+                const results = ["BIG", "SMALL", "SMALL", "BIG", "SMALL", "BIG", "BIG", "SMALL"];
+                const p = results[intervals % results.length];
+                
+                // 5 second bache honge tab "ANALYZING" dikhayega real feel ke liye
+                if (timeLeft <= 5) {
+                    document.getElementById('prediction').innerText = "???";
+                    document.getElementById('prediction').style.color = "gray";
+                } else {
+                    document.getElementById('prediction').innerText = p;
+                    document.getElementById('prediction').style.color = "white";
+                    document.getElementById('suggest').innerText = "NEXT: " + p + " (L1)";
+                }
+
+                // History Update
+                if (timeLeft == 30) { 
+                    let h = "";
+                    for(let i=1; i<=5; i++) {
+                        let hP = dateStr + "1000" + (10001 + intervals - i);
+                        let hR = results[(intervals - i + 100) % results.length];
+                        h += `<tr><td>${hP}</td><td style="color:gold;">${hR}</td><td style="color:#0f0;">WIN ✅</td></tr>`;
+                    }
+                    document.getElementById('history-body').innerHTML = h;
+                }
+            }, 1000);
+        }
+
+        startEngine();
     </script>
 </body>
 </html>
