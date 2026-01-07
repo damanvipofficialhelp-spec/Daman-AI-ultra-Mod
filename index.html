@@ -3,95 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAMAN 30S REAL-TIME AI</title>
+    <title>DAMAN VIP AI MOD | V8.5 PREMIUM</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <style>
-        body { background: #000; color: #fff; font-family: 'Arial Black', sans-serif; text-align: center; margin: 0; }
-        .matrix-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.1; font-family: monospace; font-size: 10px; }
-        .header { background: #111; padding: 15px; border-bottom: 2px solid gold; }
-        .timer-box { font-size: 40px; color: #ff0000; margin: 10px 0; text-shadow: 0 0 10px red; }
-        .main-card { border: 3px solid #0f0; margin: 15px auto; width: 90%; max-width: 400px; border-radius: 25px; background: rgba(0,30,0,0.9); padding: 25px; box-shadow: 0 0 25px #0f0; }
-        #period { font-size: 18px; color: gold; margin-bottom: 5px; }
-        #prediction { font-size: 100px; color: #fff; text-shadow: 0 0 30px gold; margin: 15px 0; }
-        .bet-advice { font-size: 20px; background: gold; color: #000; padding: 10px; border-radius: 10px; display: inline-block; font-weight: bold; }
-        .btn-vip { background: red; color: white; padding: 18px; width: 85%; border-radius: 15px; font-size: 20px; text-decoration: none; display: inline-block; margin-top: 25px; animation: blink 1s infinite; }
-        @keyframes blink { 0% {opacity: 1;} 50% {opacity: 0.7;} 100% {opacity: 1;} }
-        table { width: 100%; margin-top: 20px; border-collapse: collapse; font-size: 14px; background: #050505; }
-        th, td { border: 1px solid #333; padding: 10px; text-align: center; }
+        body { background: #000; color: #fff; font-family: 'Arial Black', sans-serif; text-align: center; margin: 0; overflow-x: hidden; }
+        .king-header { background: linear-gradient(180deg, #1a1a1a 0%, #000 100%); padding: 20px; border-bottom: 3px solid gold; animation: glow 2s infinite; }
+        @keyframes glow { 0% {box-shadow: 0 0 5px gold;} 50% {box-shadow: 0 0 20px gold;} 100% {box-shadow: 0 0 5px gold;} }
+        .logo-text { font-size: 32px; color: gold; text-transform: uppercase; text-shadow: 0 0 10px gold; margin: 0; }
+        .ad-space { background: #111; color: #444; padding: 10px; min-height: 80px; border: 1px dashed #333; margin: 10px auto; width: 95%; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+        .main-card { border: 3px solid gold; margin: 15px auto; width: 90%; max-width: 400px; border-radius: 25px; background: rgba(0, 20, 0, 0.95); padding: 20px; box-shadow: 0 0 30px #0f0; }
+        #timer { font-size: 50px; color: #ff0000; text-shadow: 0 0 15px #f00; }
+        #prediction { font-size: 90px; color: #fff; text-shadow: 0 0 20px gold; margin: 10px 0; }
+        .gift-box { background: linear-gradient(45deg, #ffcc00, #ff6600); color: #000; padding: 15px; border-radius: 12px; font-weight: bold; margin-top: 20px; animation: pulse 1s infinite; cursor: pointer; text-decoration: none; display: block; }
+        @keyframes pulse { 0% {transform: scale(1);} 50% {transform: scale(1.05);} 100% {transform: scale(1);} }
+        .btn-start { background: gold; color: #000; padding: 12px 25px; border-radius: 50px; font-weight: bold; border: none; cursor: pointer; margin: 10px; }
+        table { width: 100%; margin-top: 20px; font-size: 12px; border-collapse: collapse; }
+        th, td { border-bottom: 1px solid #333; padding: 10px; }
     </style>
 </head>
 <body>
-    <div class="matrix-bg" id="matrix"></div>
-    <div class="header">
-        <div style="font-size: 12px; color: #888;">OFFICIAL WIN GO 30S SERVER</div>
-        <div class="timer-box">TIME LEFT: <span id="timer">30s</span></div>
+    <div class="king-header">
+        <h1 class="logo-text">💎 DAMAN AI MOD 💎</h1>
+        <div style="font-size: 12px; color: #0f0;">VIP SERVER V8.5 ACTIVATED</div>
     </div>
+
+    <div class="ad-space">AD_UNIT_TOP_HERE (Paste Adsterra Code)</div>
+
+    <button class="btn-start" onclick="enableEverything()">ACTIVATE AI SERVER 🔊</button>
 
     <div class="main-card">
-        <div id="period">PERIOD: LOADING...</div>
-        <div style="font-size: 14px; color: #0f0;">AI PREDICTION</div>
+        <div id="timer">30s</div>
+        <div id="period" style="color: #aaa; font-size: 16px;">PERIOD: SYNCING...</div>
         <div id="prediction">WAIT</div>
-        <div class="bet-advice" id="suggest">NEXT BET: --</div>
-        <a href="YOUR_ADSTERRA_LINK" class="btn-vip">⚡ ACTIVATE VIP SERVER ⚡</a>
+        <div style="background: #fff; color: #000; padding: 12px; border-radius: 10px; font-weight: bold;">
+            BET: <span id="next-type" style="color:red;">--</span> | AMT: <span id="next-amt" style="color:green;">--</span>
+        </div>
+        
+        <a href="YOUR_ADSTERRA_DIRECT_LINK" class="gift-box">🎁 CLAIM $0.50 FREE GIFT CARD 🎁</a>
+
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: 15px;">
+            <a href="https://t.me/YOUR_TELEGRAM" style="background:#0088cc; color:white; padding:8px 15px; border-radius:5px; text-decoration:none; font-size:12px;">TELEGRAM</a>
+            <a href="https://t.me/YOUR_ADMIN" style="background:#333; color:white; padding:8px 15px; border-radius:5px; text-decoration:none; font-size:12px;">ADMIN</a>
+        </div>
     </div>
 
+    <div class="ad-space">AD_UNIT_BOTTOM_HERE (Paste Adsterra Code)</div>
+
     <div style="padding: 15px; text-align: left;">
-        <h3 style="color: gold;">LAST 5 RESULTS (LIVE)</h3>
+        <h3 style="color: gold;">REAL-TIME LOGS</h3>
         <table>
-            <thead><tr><th>PERIOD</th><th>RESULT</th><th>STATUS</th></tr></thead>
+            <thead><tr><th>PERIOD</th><th>SIZE</th><th>STATUS</th></tr></thead>
             <tbody id="history-body"></tbody>
         </table>
     </div>
 
+    <audio id="winSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+
     <script>
-        // Matrix Effect
-        const m = document.getElementById('matrix');
-        for(let i=0; i<50; i++) m.innerHTML += "SYNCING_WITH_DAMAN_SERVER_API...<br>";
+        let isActivated = false;
+        function enableEverything() {
+            isActivated = true;
+            document.querySelector('.btn-start').style.display = 'none';
+            startEngine();
+        }
 
         function startEngine() {
+            const patterns = ["BIG", "SMALL", "BIG", "BIG", "SMALL", "BIG", "SMALL", "SMALL"];
+            const money = ["₹10 (L1)", "₹30 (L2)", "₹90 (L3)", "₹270 (L4)"];
+
             setInterval(() => {
                 const now = new Date();
-                const seconds = now.getSeconds();
-                const milliseconds = now.getMilliseconds();
-                
-                // 30 Second Countdown Logic (0-30 and 30-60)
-                let timeLeft = 30 - (seconds % 30);
+                const istOffset = 5.5 * 60 * 60 * 1000;
+                const istDate = new Date(now.getTime() + (now.getTimezoneOffset() * 60000) + istOffset);
+                const sec = istDate.getSeconds();
+                let timeLeft = 30 - (sec % 30);
                 document.getElementById('timer').innerText = timeLeft + "s";
 
-                // Period Sync
-                const totalSeconds = Math.floor((now - new Date().setHours(0,0,0,0)) / 1000);
-                const intervals = Math.floor(totalSeconds / 30);
-                const dateStr = now.getFullYear().toString() + (now.getMonth() + 1).toString().padStart(2, '0') + now.getDate().toString().padStart(2, '0');
+                const totalSec = (istDate.getHours() * 3600) + (istDate.getMinutes() * 60) + sec;
+                const intervals = Math.floor(totalSec / 30);
+                const dateStr = istDate.getFullYear().toString() + (istDate.getMonth() + 1).toString().padStart(2, '0') + istDate.getDate().toString().padStart(2, '0');
                 const currentP = dateStr + "1000" + (10001 + intervals);
                 document.getElementById('period').innerText = "PERIOD: " + currentP;
 
-                // Prediction Logic (Har 30 sec baad badlega)
-                const results = ["BIG", "SMALL", "SMALL", "BIG", "SMALL", "BIG", "BIG", "SMALL"];
-                const p = results[intervals % results.length];
-                
-                // 5 second bache honge tab "ANALYZING" dikhayega real feel ke liye
-                if (timeLeft <= 5) {
-                    document.getElementById('prediction').innerText = "???";
-                    document.getElementById('prediction').style.color = "gray";
-                } else {
-                    document.getElementById('prediction').innerText = p;
-                    document.getElementById('prediction').style.color = "white";
-                    document.getElementById('suggest').innerText = "NEXT: " + p + " (L1)";
+                const pred = patterns[intervals % patterns.length];
+                const amt = money[intervals % money.length];
+
+                if (timeLeft === 30 && isActivated) {
+                    document.getElementById('winSound').play();
+                    confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
                 }
 
-                // History Update
-                if (timeLeft == 30) { 
+                if(timeLeft <= 3) {
+                    document.getElementById('prediction').innerText = "???";
+                } else {
+                    document.getElementById('prediction').innerText = pred;
+                    document.getElementById('next-type').innerText = pred;
+                    document.getElementById('next-amt').innerText = amt;
+                }
+
+                if(timeLeft == 30) {
                     let h = "";
-                    for(let i=1; i<=5; i++) {
+                    for(let i=1; i<=6; i++) {
                         let hP = dateStr + "1000" + (10001 + intervals - i);
-                        let hR = results[(intervals - i + 100) % results.length];
-                        h += `<tr><td>${hP}</td><td style="color:gold;">${hR}</td><td style="color:#0f0;">WIN ✅</td></tr>`;
+                        let hR = patterns[(intervals - i + 100) % patterns.length];
+                        let isWin = (i % 5 !== 0);
+                        let status = isWin ? "WIN ✅" : "LOSS ❌";
+                        h += `<tr><td>${hP}</td><td>${hR}</td><td style="color:${isWin?'#0f0':'#f00'};">${status}</td></tr>`;
                     }
                     document.getElementById('history-body').innerHTML = h;
                 }
             }, 1000);
         }
-
-        startEngine();
     </script>
 </body>
 </html>
